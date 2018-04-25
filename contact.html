@@ -14,20 +14,22 @@
     <!-- Main Container -->
     <div id="mainContainer">
         <!-- Header -->
-        <header id="mainHeader">
-            <h1>Rhonda Johnson- Contact</h1>
-        </header>
+        <div id="headingArea">
+            <header id="mainHeader">
+                <h1>Rhonda Johnson</h1>
+            </header>
 
-        <section id="linkSection">
-            <!-- About Section -->
-            <a id="aboutLink" href="index.html">About</a>
+            <section id="linkSection">
+                <!-- About Section -->
+                <a id="aboutLink" href="index.html">About</a>
 
-            <!-- Portfolio Section -->
-            <a id="portfolioLink" href="portfolio.html">Portfolio</a>
+                <!-- Portfolio Section -->
+                <a id="portfolioLink" href="portfolio.html">Portfolio</a>
 
-            <!-- Contact Section -->
-            <a id="contactLink" href="#">Contact</a>
-        </section>
+                <!-- Contact Section -->
+                <a id="contactLink" href="#">Contact</a>
+            </section>
+        </div>
 
         <div id="mainContent">
             <div id="div_Contact">
@@ -36,15 +38,19 @@
                     <hr>
 
                     <form id="contactSection">
-                        <p>Name</p>
-                        <p>Email</p>
-                        <p>Message</p>
+                        
+                        <strong><label for="nameContact">Name</label></strong>
+                        <span><input type="text" id="nameContact" name="name" placeholder="Your name..."></span>
 
-                        <label for="nameContact">Name</label>
-                        <input type="text" id="nameContact" name="name" placeholder="Your name..">
+                        <strong><label for="emailContact">Email</label></strong>
+                        <input type="text" id="emailContact" name="email" placeholder="Email Address...">
 
-                        <button class="button" id="submitContact">Submit</button>
+                        <strong><label for="messageContact">Message</label></strong>                 
+                        <textarea id="messageContact" rows="4" cols="100" name="message" form="contactSection"></textarea>
+                      
                     </form>
+                    
+                    <button class="button" id="submitContact">Submit</button>
 
                 </section>
 
@@ -54,8 +60,7 @@
         </div>
 
         <footer id="mainFooter">
-            &lt;This is the footer;&gt;
-            
+                      
         </footer>
 
 
